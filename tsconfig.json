@@ -1,0 +1,17 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    /*
+     * 路径别名：所有跨目录导入一律写 @/…，不再靠 ../../ 数层级。
+     * Metro 会读这里（app.json 里显式打开了 experiments.tsconfigPaths），
+     * 所以运行时和 tsc 用的是同一套解析规则。
+     * 不设 baseUrl —— TS 6 起它已废弃，paths 直接相对 tsconfig 所在目录解析。
+     */
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"],
+  "exclude": ["node_modules", "android", "ios", "scripts"]
+}

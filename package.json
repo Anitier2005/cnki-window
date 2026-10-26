@@ -1,0 +1,52 @@
+{
+  "name": "cnki-app",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-navigation/bottom-tabs": "^7.21.0",
+    "@react-navigation/native": "^7.5.1",
+    "@react-navigation/native-stack": "^7.21.0",
+    "expo": "~58.0.17",
+    "expo-asset": "~58.0.18",
+    "expo-build-properties": "^58.0.11",
+    "expo-clipboard": "~58.0.4",
+    "expo-file-system": "~58.0.11",
+    "expo-haptics": "~58.0.7",
+    "expo-intent-launcher": "~58.0.3",
+    "expo-sharing": "~58.0.20",
+    "expo-splash-screen": "~58.0.11",
+    "expo-status-bar": "~58.0.4",
+    "lucide-react-native": "^1.61.0",
+    "react": "19.3.0",
+    "react-native": "0.88.0",
+    "react-native-safe-area-context": "~5.10.1",
+    "react-native-screens": "~4.30.0",
+    "react-native-svg": "15.16.0",
+    "react-native-webview": "14.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "~19.3.0",
+    "eslint": "^9.39.4",
+    "eslint-config-expo": "~58.0.4",
+    "pdfjs-dist": "^3.11.174",
+    "prettier": "^3.9.10",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "lint": "expo lint",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "typecheck": "tsc --noEmit",
+    "doctor": "expo-doctor",
+    "build:android": "node scripts/tools/build-android.js",
+    "lab": "node scripts/lab/server.js",
+    "lab:smoke": "node scripts/lab/smoke.js",
+    "lab:slide": "node scripts/lab/slide-check.js"
+  },
+  "private": true,
+  "packageManager": "yarn@4.13.0+sha512.5c20ba010c99815433e5c8453112165e673f1c7948d8d2b267f4b5e52097538658388ebc9f9580656d9b75c5cc996f990f611f99304a2197d4c56d21eea370e7"
+}

@@ -1,0 +1,12 @@
+# 统一换行符，避免 Windows 上提交时把整份文件改成 CRLF
+* text=auto eol=lf
+
+# 二进制文件不做行尾转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ttf binary
+*.otf binary
+
+# pdf.js 是压缩过的单行 JS，按二进制存，防止任何换行改写
+src/features/reader/assets/pdfjs/*.txt binary
