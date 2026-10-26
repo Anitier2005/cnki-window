@@ -13,6 +13,19 @@
 
 用户在正常使用过程中看不到任何知网原始页面 —— 唯一一次看到，是手动完成 IP 登录/滑块验证的时候。
 
+## 下载
+
+安装包放在 [Releases](https://github.com/Anitier2005/cnki-window/releases)，不进仓库（二进制会永久撑大 git 历史）。
+
+| 版本 | 文件 | 架构 | 体积 |
+|---|---|---|---|
+| [v1.0.0](https://github.com/Anitier2005/cnki-window/releases/tag/v1.0.0) | `shanyue-cnki-v1.0.0-arm64-v8a.apk` | arm64-v8a | 33.9 MiB |
+
+包名 `com.shanyue.cnkiwindow`，Android 7.0+（minSdk 24）。
+SHA-256：`fa9095697f63ff123c56ce80887a0fa000a69002475e872972bca5d03a99782b`。
+
+只出 arm64-v8a：新架构下每个 ABI 都要现场编译 C++，32 位包（含模拟器常用的 x86 镜像）不提供，装了也起不来。
+
 ## 运行
 
 依赖里有原生模块（`react-native-webview`、`expo-file-system`、`expo-sharing`），
