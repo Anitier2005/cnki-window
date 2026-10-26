@@ -1,4 +1,4 @@
-# cnki-window（知网阅览）
+# cnki-window（闪阅CNKI）
 
 一个 React Native 客户端，用来在手机上以**机构 IP 授权**的方式访问知网，界面全部原生渲染。
 
@@ -197,6 +197,12 @@ npm run build:android          # 等价于 cd android && ./gradlew assembleRelea
 
 产物：`android/app/build/outputs/apk/release/app-release.apk`
 （仅含 arm64-v8a；如需多 ABI，改 `gradle.properties` 的 `reactNativeArchitectures`）
+
+`android/` 和 `ios/` 都是 `npx expo prebuild` 生成的原生工程，不入库。
+首次构建前先跑一次 prebuild，生成后**还要手工补一行**：
+`MainActivity.onCreate` 里加上 `WebView.setWebContentsDebuggingEnabled(true)`，
+否则 `chrome://inspect` 看不到承载知网登录态的 WebView，排查验证码/接口问题时没有现场。
+包名与显示名只改 `app.json` 的 `android.package` 和 `name`，不要直接动生成出来的 `build.gradle`。
 
 ### Windows 上必须替换 ninja
 

@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "知网阅览",
+    "name": "闪阅CNKI",
     "slug": "cnki-window",
     "version": "1.0.0",
     "orientation": "default",
@@ -8,7 +8,7 @@
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.cnkireader.app",
+      "bundleIdentifier": "com.shanyue.cnkiwindow",
       "infoPlist": {
         "NSAppTransportSecurity": {
           "NSAllowsArbitraryLoads": false
@@ -16,7 +16,7 @@
       }
     },
     "android": {
-      "package": "com.cnkireader.app",
+      "package": "com.shanyue.cnkiwindow",
       "adaptiveIcon": {
         "backgroundColor": "#1B4B8F",
         "foregroundImage": "./assets/android-icon-foreground.png",

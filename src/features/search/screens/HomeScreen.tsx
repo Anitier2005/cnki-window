@@ -56,7 +56,7 @@ export function HomeScreen() {
           ]}
         >
           <View style={r.wide ? styles.brandCol : undefined}>
-            <Text style={[styles.brand, r.wide && styles.brandWide]}>知网阅览</Text>
+            <Text style={[styles.brand, r.wide && styles.brandWide]}>闪阅CNKI</Text>
             <Text style={[styles.slogan, r.wide && { marginBottom: 0 }]}>
               以机构身份检索学术文献
             </Text>
