@@ -1,4 +1,4 @@
-# 知网阅览（CNKI Reader）
+# cnki-window（知网阅览）
 
 一个 React Native 客户端，用来在手机上以**机构 IP 授权**的方式访问知网，界面全部原生渲染。
 

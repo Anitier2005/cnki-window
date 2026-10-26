@@ -1,5 +1,5 @@
 {
-  "name": "cnki-app",
+  "name": "cnki-window",
   "version": "1.0.0",
   "main": "index.ts",
   "dependencies": {
